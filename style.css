@@ -1,0 +1,71 @@
+/* start variable */
+:root{
+    --main-color : #19c8fa;
+}
+/* End variable */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+header .contant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .contant::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #a2a2a2;
+    bottom: 0;
+    width: 100%;
+}
+header .logo img{
+    height: 114px;
+    border-radius: 20%;
+}
+header nav{
+    flex: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav .fa-align-left{
+    color: white;
+    font-size: 22px;
+}
+header nav ul{
+    display: flex;
+    list-style:none;
+}
+header nav ul li a{
+    padding: 40px 18px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+header nav ul li a.activ,
+header nav ul li a:hover{
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+/*start landing*/
+.landing
+/*End landing*/
